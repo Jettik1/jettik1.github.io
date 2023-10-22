@@ -9,7 +9,7 @@ export const postApi = createApi({
 
         }),
         getPosts: builder.query({
-            query: (pageNumber) => `posts?_page=${pageNumber}&_limit=15`,
+            query: () => `posts`,
             serializeQueryArgs: ({endpointName}) => {
                 return endpointName
             },
