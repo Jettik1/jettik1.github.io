@@ -14,7 +14,11 @@ function App() {
         const item = data[index]
         return (
             <div key={item.id} style={style}>
-                <p><Link to={`/${item.id}`} preventScrollReset={false} state={{ id: item.id}}>{item.id}. {item.title}</Link></p>
+                <p><Link to={`/${item.id}`}
+                         preventScrollReset={false}
+                         state={{ id: item.id}}>
+                    {item.id}. {item.title}
+                </Link></p>
                 {item.body.length >= 50 ? (
                     <div>{item.body.slice(0, 50)}...</div>
                 ) : (
