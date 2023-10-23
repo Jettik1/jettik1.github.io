@@ -2,7 +2,7 @@
   "name": "picasso-test",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://jettik1.github.io/picasso-test/",
+  "homepage": "https://jettik1.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
